@@ -11,7 +11,7 @@ function ButtonLink(props: ButtonLinkProps) {
   const { className, children, ...btnLinkProps } = props;
 
   let classes =
-    "rounded-md text-[12px] font-inter md:text-base md:font-semibold";
+    "rounded-md text-[12px] font-inter md:text-base md:font-semibold transition-all";
 
   // sizes
   if (props.size === "lg") {
@@ -23,13 +23,15 @@ function ButtonLink(props: ButtonLinkProps) {
 
   // variants
   if (props.variant === "primary") {
-    classes += " bg-gradient-to-r from-brand-orange to-brand-pink text-gray-50";
+    classes +=
+      " bg-gradient-to-r from-brand-orange to-brand-pink text-gray-50 hover:bg-brand-orange";
   }
   if (props.variant === "outline") {
-    classes += " border border-gray-300 text-gray-700";
+    classes +=
+      " border border-2 border-gray-300 text-gray-800 hover:bg-gray-300";
   }
   if (props.variant === "black") {
-    classes += " bg-gray-900 text-gray-50";
+    classes += " bg-gray-900 hover:bg-gray-700 text-gray-5 py-2";
   }
   return (
     <a

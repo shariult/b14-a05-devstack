@@ -23,13 +23,14 @@ function Button(props: ButtonProps) {
 
   // variants
   if (props.variant === "primary") {
-    classes += " bg-gradient-to-r from-brand-orange to-brand-pink text-gray-50";
+    classes +=
+      " bg-gradient-to-r from-brand-orange to-brand-pink hover:bg-gray-900 text-gray-50";
   }
   if (props.variant === "outline") {
-    classes += " border border-gray-300 text-gray-700";
+    classes += " border border-gray-300 text-gray-900 hover:bg-gray-300";
   }
   if (props.variant === "black") {
-    classes += " bg-gray-900 text-gray-50";
+    classes += " bg-gray-900 hover:bg-gray-700 text-gray-50 py-2";
   }
 
   return (

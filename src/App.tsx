@@ -1,14 +1,17 @@
+import Footer from "./components/layout/Footer";
+import Hero from "./components/layout/Hero";
 import MainNav from "./components/layout/MainNav";
-import Button from "./components/ui/Button";
+import Techs from "./components/layout/Techs";
 
 function App() {
   return (
     <>
-      <MainNav />
-      <h1 className="text-3xl">Dev Stack</h1>
-      <Button size="lg" variant="black">
-        Sign Up
-      </Button>
+      <main className="bg-gray-100">
+        <MainNav />
+        <Hero />
+        <Techs />
+      </main>
+      <Footer />
     </>
   );
 }

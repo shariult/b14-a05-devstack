@@ -10,3 +10,7 @@
   --color-brand-purple: #7c3aed;
   --color-brand-pr: #d91b7e;
 }
+
+.text-brand-gradient {
+  @apply bg-gradient-to-r from-brand-orange via-brand-pink to-brand-purple bg-clip-text text-transparent;
+}

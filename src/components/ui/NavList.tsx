@@ -13,7 +13,7 @@ function NavList(props: NavListProps) {
 
   return (
     <ul
-      className={`flex flex-col md:flex-row md:flex-wrap md:gap-6 absolute top-full left-0 md:static bg-gray-50 md:bg-white w-full md:w-auto transition origin-top-left ${classes}`}
+      className={`flex flex-col md:flex-row md:flex-wrap md:gap-6 absolute top-full left-0 md:static bg-gray-50 md:bg-transparent w-full md:w-auto transition origin-top-left ${classes}`}
     >
       <li>
         <NavLink href="#">Home</NavLink>

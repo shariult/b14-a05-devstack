@@ -5,13 +5,13 @@ import NavCta from "../ui/NavCta";
 import NavList from "../ui/NavList";
 
 function MainNav() {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
   function navToggleHandler(): void {
     setIsOpen((prev) => !prev);
   }
 
   return (
-    <nav className="flex justify-center items-center w-full relative border-b border-b-gray-100">
+    <nav className="flex justify-center items-center w-full bg-white sticky top-0 border-b border-b-gray-100 shadow-md">
       <div className="container p-4 flex justify-between items-center">
         <button className="cursor-pointer md:hidden" onClick={navToggleHandler}>
           <img src={humburgerImg} alt="mobile menu" className="w-6" />
