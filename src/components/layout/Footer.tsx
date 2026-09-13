@@ -1,5 +1,7 @@
-import FooterLink from "../ui/FooterLink";
+import FooterLink from "../ui/footer/FooterLink";
 import footerImg from "../../assets/logo-text.png";
+import FooterSocial from "../ui/footer/FooterSocial";
+import FooterNavLink from "../ui/footer/FooterNavLink";
 
 function Footer() {
   return (
@@ -14,17 +16,12 @@ function Footer() {
             modern software.
           </p>
           <div className="flex gap-6 items-center">
-            <a href="#" className="text-xs hover:text-brand-pink">
-              Github
-            </a>
+            <FooterSocial>Github</FooterSocial>
             <span className="inline-block w-2 h-2 bg-gray-300 rounded-full md:hidden"></span>
-            <a href="#" className="text-xs hover:text-brand-pink">
-              Twitter
-            </a>
+            <FooterSocial>Twitter</FooterSocial>
+
             <span className="inline-block w-2 h-2 bg-gray-300 rounded-full md:hidden"></span>
-            <a href="#" className="text-xs hover:text-brand-pink">
-              LinkedIn
-            </a>
+            <FooterSocial>LinkedIn</FooterSocial>
           </div>
         </div>
 
@@ -33,24 +30,9 @@ function Footer() {
           <h4 className="text-md uppercase font-bold">Product</h4>
 
           <div className="flex flex-col gap-2">
-            <a
-              href="#"
-              className="font-jakarta text-sm text-gray-500 hover:text-brand-pink"
-            >
-              Home
-            </a>
-            <a
-              href="#"
-              className="font-jakarta text-sm text-gray-500 hover:text-brand-pink"
-            >
-              Technologies
-            </a>
-            <a
-              href="#"
-              className="font-jakarta text-sm text-gray-500 hover:text-brand-pink"
-            >
-              Projects
-            </a>
+            <FooterNavLink href="#">Home</FooterNavLink>
+            <FooterNavLink href="#">Technologies</FooterNavLink>
+            <FooterNavLink href="#">Projects</FooterNavLink>
           </div>
         </div>
 
@@ -59,24 +41,9 @@ function Footer() {
           <h4 className="text-md uppercase font-bold">Company</h4>
 
           <div className="flex flex-col gap-2">
-            <a
-              href="#"
-              className="font-jakarta text-sm text-gray-500 hover:text-brand-pink"
-            >
-              About
-            </a>
-            <a
-              href="#"
-              className="font-jakarta text-sm text-gray-500 hover:text-brand-pink"
-            >
-              Contact
-            </a>
-            <a
-              href="#"
-              className="font-jakarta text-sm text-gray-500 hover:text-brand-pink"
-            >
-              Careers
-            </a>
+            <FooterNavLink href="#">About</FooterNavLink>
+            <FooterNavLink href="#">Contact</FooterNavLink>
+            <FooterNavLink href="#">Careers</FooterNavLink>
           </div>
         </div>
 
@@ -85,18 +52,8 @@ function Footer() {
           <h4 className="text-md uppercase font-bold">Legal Service</h4>
 
           <div className="flex flex-col gap-2">
-            <a
-              href="#"
-              className="font-jakarta text-sm text-gray-500 hover:text-brand-pink"
-            >
-              Privacy policy
-            </a>
-            <a
-              href="#"
-              className="font-jakarta text-sm text-gray-500 hover:text-brand-pink"
-            >
-              Terms of Use
-            </a>
+            <FooterNavLink href="#">Privacy Policy</FooterNavLink>
+            <FooterNavLink href="#">Terms of Use</FooterNavLink>
           </div>
         </div>
       </div>

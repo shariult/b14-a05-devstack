@@ -1,6 +1,6 @@
 import React from "react";
-import TechCard from "../TechCard";
-import TechCart from "../TechCart";
+import TechCard from "../Tech/TechCard";
+import TechCart from "../Tech/TechCart";
 
 function Techs() {
   return (

@@ -5,11 +5,12 @@ type FooterLinkProps = {
 } & ComponentPropsWithoutRef<"a">;
 
 function FooterLink(props: FooterLinkProps) {
-  const { className } = props;
+  const { className, ...otherProps } = props;
   return (
     <a
       href="#"
       className={`text-gray-400 hover:text-brand-pink text-sm ${className}`}
+      {...otherProps}
     >
       {props.children}
     </a>

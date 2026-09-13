@@ -1,4 +1,4 @@
-import ButtonLink from "../ui/ButtonLink";
+import ButtonLink from "../ui/btn/ButtonLink";
 import heroImg from "../../assets/banner-stack.png";
 
 function Hero() {
