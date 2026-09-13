@@ -70,7 +70,10 @@ function TechCard(props: TechCardProps) {
       )}
 
       {props.isAdded && (
-        <button className="py-2 w-full text-green-500 bg-green-200 border border-green-400 rounded cursor-not-allowed mt-auto">
+        <button
+          className="py-2 w-full text-green-500 bg-green-200 border border-green-400 rounded cursor-not-allowed mt-auto"
+          disabled
+        >
           ✓ Added to Stack
         </button>
       )}
