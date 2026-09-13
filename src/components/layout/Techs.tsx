@@ -40,10 +40,16 @@ function Techs() {
     });
   }
   function removeAllHandler() {
-    setCartItems([]);
-    toast("Stack Cleared!", {
-      position: "bottom-right",
-    });
+    if (cartItems.length === 0) {
+      toast("Stack is empty!", {
+        position: "bottom-right",
+      });
+    } else {
+      setCartItems([]);
+      toast("Stack Cleared!", {
+        position: "bottom-right",
+      });
+    }
   }
 
   return (
