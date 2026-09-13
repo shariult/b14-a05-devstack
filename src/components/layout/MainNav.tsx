@@ -9,14 +9,19 @@ function MainNav() {
   function navToggleHandler(): void {
     setIsOpen((prev) => !prev);
   }
+
   return (
     <nav className="flex justify-center items-center w-full relative border-b border-b-gray-100">
-      <div className="container flex justify-between items-center px-6 py-4">
+      <div className="container p-4 flex justify-between items-center">
         <button className="cursor-pointer md:hidden" onClick={navToggleHandler}>
-          <img src={humburgerImg} alt="mobile menu" className="w-8" />
+          <img src={humburgerImg} alt="mobile menu" className="w-6" />
         </button>
 
-        <img src={logoImg} alt="company logo" className="w-32" />
+        <img
+          src={logoImg}
+          alt="company logo"
+          className="max-w-20 md:max-w-32"
+        />
 
         <NavList isOpen={isOpen} />
 
