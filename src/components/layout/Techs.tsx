@@ -67,7 +67,15 @@ function Techs() {
 
         <div className="p-4 lg:grid lg:grid-cols-3 xl:grid-cols-4 gap-6">
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mb-6 md:col-span-2 xl:col-span-3">
-            {isLoading && <p>Loading, Please wait!</p>}
+            {isLoading && (
+              <div className="flex flex-col items-center justify-center gap-3 p-4">
+                <div className="w-8 h-8 border-4 border-blue-500 border-t-transparent rounded-full animate-spin" />
+                <p className="text-sm font-medium text-gray-600">
+                  Loading, please wait...
+                </p>
+              </div>
+            )}
+
             {error && (
               <p className="text-red-500 text-2xl">Something went wrong!</p>
             )}
