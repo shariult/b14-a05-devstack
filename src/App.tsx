@@ -13,7 +13,7 @@ function App() {
         <Techs />
       </main>
 
-      <ToastContainer />
+      <ToastContainer autoClose={1500} />
       <Footer />
     </>
   );

@@ -7,7 +7,7 @@ function Footer() {
   return (
     <footer className="px-4 font-jakarta">
       {/* footer top */}
-      <div className="px-6 py-12 md:flex md:gap-6 md:justify-between">
+      <div className="container mx-auto px-6 py-12 md:flex md:gap-6 md:justify-between">
         {/* footer col */}
         <div className="flex flex-col justify-center items-center gap-4 md:items-start">
           <img src={footerImg} alt="banner stack" className="max-w-40" />
@@ -59,7 +59,7 @@ function Footer() {
       </div>
 
       {/* footer copy */}
-      <div className="flex justify-between py-4 border-t border-t-gray-100">
+      <div className="container mx-auto flex justify-between p-4 border-t border-t-gray-100">
         <p className="text-sm text-gray-400">
           &copy; 2026 Dev Stack. All rights reserved.
         </p>

@@ -22,12 +22,12 @@ function Techs() {
   function addCartHandler(data: TechData) {
     const doesExist = cartItems.some((item) => item.id === data.id);
     if (doesExist) {
-      toast("Already exists!", {
+      toast.warning("Already exists!", {
         position: "bottom-right",
       });
     } else {
       setCartItems([...cartItems, data]);
-      toast(`${data.name} Added to Cart`, {
+      toast.success(`${data.name} Added to Cart`, {
         position: "bottom-right",
       });
     }
@@ -35,18 +35,18 @@ function Techs() {
   function removeItemHandler(id: string) {
     const newCartItems = cartItems.filter((item) => item.id !== id);
     setCartItems(newCartItems);
-    toast(`${id.toUpperCase()} Removed from Cart!`, {
+    toast.success(`${id.toUpperCase()} Removed from Cart!`, {
       position: "bottom-right",
     });
   }
   function removeAllHandler() {
     if (cartItems.length === 0) {
-      toast("Stack is empty!", {
+      toast.error("Stack is empty!", {
         position: "bottom-right",
       });
     } else {
       setCartItems([]);
-      toast("Stack Cleared!", {
+      toast.success("Stack Cleared!", {
         position: "bottom-right",
       });
     }

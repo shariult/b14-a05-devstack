@@ -11,7 +11,7 @@ function Hero() {
             Build Your Ideal
             <span className="block text-brand-gradient">Development Stack</span>
           </h1>
-          <p className="mb-6 text-gray-500 text-center md:text-left font-inter text-[14px] md:text-lg">
+          <p className="mb-6 md:max-w-2/3 text-gray-500 text-center md:text-left font-inter text-[14px] md:text-lg">
             Explore frontend, backend, database, and tooling options, compare
             them side by side, and put together the stack that fits your next
             project.
@@ -38,7 +38,7 @@ function Hero() {
         </div>
 
         {/* hero right */}
-        <div className="w-full flex justify-center items-center">
+        <div className="max-w-96 flex justify-center items-center">
           <img src={heroImg} alt="stack image" className="w-full" />
         </div>
       </div>
