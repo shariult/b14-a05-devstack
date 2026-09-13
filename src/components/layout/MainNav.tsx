@@ -1,8 +1,8 @@
 import { useState } from "react";
 import humburgerImg from "../../assets/hamburger.png";
 import logoImg from "../../assets/logo-text.png";
-import NavCta from "../ui/NavCta";
-import NavList from "../ui/NavList";
+import NavCta from "../ui/nav/NavCta";
+import NavList from "../ui/nav/NavList";
 
 function MainNav() {
   const [isOpen, setIsOpen] = useState(false);

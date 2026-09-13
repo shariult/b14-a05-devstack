@@ -1,4 +1,11 @@
-function TechCartItem() {
+import type { TechData } from "../../types";
+
+type TechCartItemProps = {
+  techItem: TechData;
+  onRemoveToCart: (id: string) => void;
+};
+
+function TechCartItem(props: TechCartItemProps) {
   return (
     <div className="p-6 flex items-center border border-gray-300 rounded-2xl border-solid">
       <img
@@ -8,11 +15,14 @@ function TechCartItem() {
       />
 
       <div>
-        <h5 className="text-lg font-bold">React</h5>
-        <p className="text-sm text-gray-500">Front-end</p>
+        <h5 className="text-lg font-bold">{props.techItem.name}</h5>
+        <p className="text-sm text-gray-500">{props.techItem.category}</p>
       </div>
 
-      <button className="text-gray-500 ml-auto cursor-pointer hover:bg-gray-300 rounded">
+      <button
+        className="text-gray-500 ml-auto cursor-pointer hover:bg-gray-300 rounded"
+        onClick={() => props.onRemoveToCart(props.techItem.id)}
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 256 256"
