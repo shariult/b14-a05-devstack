@@ -27,7 +27,7 @@ function Footer() {
 
         {/* footer col */}
         <div className="hidden md:flex md:flex-col md:gap-4">
-          <h4 className="text-md uppercase font-bold">Product</h4>
+          <h4 className="text-sm uppercase font-bold">Product</h4>
 
           <div className="flex flex-col gap-2">
             <FooterNavLink href="#">Home</FooterNavLink>
@@ -38,7 +38,7 @@ function Footer() {
 
         {/* footer col */}
         <div className="hidden md:flex md:flex-col md:gap-4">
-          <h4 className="text-md uppercase font-bold">Company</h4>
+          <h4 className="text-sm uppercase font-bold">Company</h4>
 
           <div className="flex flex-col gap-2">
             <FooterNavLink href="#">About</FooterNavLink>
@@ -49,7 +49,7 @@ function Footer() {
 
         {/* footer col */}
         <div className="hidden md:flex md:flex-col md:gap-4">
-          <h4 className="text-md uppercase font-bold">Legal Service</h4>
+          <h4 className="text-sm uppercase font-bold">Legal Service</h4>
 
           <div className="flex flex-col gap-2">
             <FooterNavLink href="#">Privacy Policy</FooterNavLink>
